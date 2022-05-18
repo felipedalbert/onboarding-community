@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAA;EACA,WAAW,ECHP,cAAc,EAAE,UAAU;CDIjC;;ADFD,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CAOtB;;AAdD,AASI,IATA,CASA,EAAE,CAAA;EACE,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "screen-1.scss",
+        "../../abstract/_global.scss",
+        "../../abstract/_variables.scss"
+    ],
+    "names": [],
+    "file": "screen-1.css"
+}

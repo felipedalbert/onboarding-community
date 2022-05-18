@@ -2,4 +2,14 @@
 
 html{
     font-family: $fonte;
+    font-size: 62.5%;
+}
+
+h1, p{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;        
+    user-select: none;            
 }

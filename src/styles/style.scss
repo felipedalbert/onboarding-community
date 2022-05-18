@@ -1,12 +1,5 @@
 @import './abstract/global';
 @import './abstract/reset';
-
-main{
-    width: 100vw;
-    height: 100vh;
-    padding: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    flex-direction: column;
-}
+@import './style-screens/screen-1';
+@import './style-screens/screen-2';
+@import './style-screens/screen-3';

@@ -1,0 +1,11 @@
+@import './abstract/variables';
+
+main{
+    width: 100vw;
+    height: 100vh;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+}

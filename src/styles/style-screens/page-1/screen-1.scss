@@ -3,8 +3,8 @@
 @mixin keyframes($animation-name){
     @keyframes #{$animation-name}{
         from{
-            opacity: .6;
-            margin-left: 150px;
+            opacity: .1;
+            margin-left: 200px;
         }
         to{
             opacity: 1;
@@ -37,7 +37,7 @@ main{
     img{
         margin-top: -20px;
         animation-name: emerge;
-        animation-duration: .3s;
+        animation-duration: .5s;
         @include keyframes(emerge);
     }
 
@@ -73,7 +73,7 @@ main{
                 border: none;
                 background-color: $cor-primaria;
                 animation-name: slide;
-                animation-duration: .3s;
+                animation-duration: .8s;
 
                 @include keyframes-2(slide);
             }

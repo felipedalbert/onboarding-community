@@ -1,1 +1,185 @@
-/* No CSS *//*# sourceMappingURL=screen-2.css.map */
+html {
+  font-family: "TT Norms Pro", sans-serif;
+  font-size: 62.5%;
+}
+
+img, h1, p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main img {
+  margin-top: -20px;
+  -webkit-animation-name: emerge;
+          animation-name: emerge;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+@-webkit-keyframes emerge {
+  from {
+    opacity: .6;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    width: 300px;
+  }
+}
+
+@keyframes emerge {
+  from {
+    opacity: .6;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    width: 300px;
+  }
+}
+
+main h1 {
+  font-size: 2.4rem;
+  margin-top: 7px;
+}
+
+@media (max-width: 326px) {
+  main h1 {
+    font-size: 2.3rem;
+  }
+}
+
+main p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 26px;
+  width: 275px;
+  text-align: center;
+}
+
+main .indicators {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 17px;
+          column-gap: 17px;
+}
+
+main .indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+main .indicators .indicator:nth-child(2) {
+  border: none;
+  background-color: #92e3a9;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+@-webkit-keyframes slide {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main .buttons {
+  margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  row-gap: 42px;
+}
+
+main .buttons .continue-button {
+  width: 308px;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #92e3a9;
+  -webkit-box-shadow: 0px 4px 10px #A1C3FC;
+          box-shadow: 0px 4px 10px #A1C3FC;
+  border-radius: 5px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+main .buttons .continue-button:hover {
+  background-color: #7bc490;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+@media (max-width: 326px) {
+  main .buttons .continue-button {
+    width: 100%;
+  }
+}
+
+main .buttons .skip-button {
+  font-size: 1.8rem;
+  color: #92e3a9;
+  border-bottom: 2px solid #ffffff;
+}
+
+main .buttons .skip-button:hover {
+  border-bottom: 2px solid #7bc490;
+}
+/*# sourceMappingURL=screen-2.css.map */

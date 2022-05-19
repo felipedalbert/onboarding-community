@@ -3,6 +3,19 @@
 @mixin keyframes($animation-name){
     @keyframes #{$animation-name}{
         from{
+            opacity: .6;
+            margin-left: 150px;
+        }
+        to{
+            opacity: 1;
+            width: 300px;
+        }
+    }
+}
+
+@mixin keyframes-2($animation-name){
+    @keyframes #{$animation-name}{
+        from{
             opacity: 0.1;
         }
         to{
@@ -14,12 +27,20 @@
 main{
     width: 100vw;
     height: 100vh;
-    padding: 50px 35px;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
+    
+    img{
+        margin-top: -20px;
+        animation-name: emerge;
+        animation-duration: .3s;
+        @include keyframes(emerge);
+    }
+
     h1{
         font-size: 2.4rem;
         margin-top: 7px;
@@ -52,9 +73,9 @@ main{
                 border: none;
                 background-color: $cor-primaria;
                 animation-name: slide;
-                animation-duration: 1s;
+                animation-duration: .3s;
 
-                @include keyframes(slide)
+                @include keyframes-2(slide);
             }
         }
     }
@@ -64,7 +85,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+        width: 100%;
         row-gap: 42px;
 
         .continue-button{
@@ -80,14 +101,14 @@ main{
             box-shadow: 0px 4px 10px #A1C3FC;
             border-radius: 5px;
             transition: .2s ease-in-out;
-
+            
             &:hover{
                 background-color: #7bc490;
                 transition: .2s ease-in-out;
             }
 
             @media (max-width: 326px) {
-                width: 290px;
+                width: 100%;
             }
         }
 

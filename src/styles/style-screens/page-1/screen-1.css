@@ -3,7 +3,7 @@ html {
   font-size: 62.5%;
 }
 
-h1, p {
+img, h1, p {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -14,7 +14,7 @@ h1, p {
 main {
   width: 100vw;
   height: 100vh;
-  padding: 50px 35px;
+  padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +28,36 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main img {
+  margin-top: -20px;
+  -webkit-animation-name: emerge;
+          animation-name: emerge;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+@-webkit-keyframes emerge {
+  from {
+    opacity: .6;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    width: 300px;
+  }
+}
+
+@keyframes emerge {
+  from {
+    opacity: .6;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    width: 300px;
+  }
 }
 
 main h1 {
@@ -70,8 +100,8 @@ main .indicators .indicator:first-child {
   background-color: #92e3a9;
   -webkit-animation-name: slide;
           animation-name: slide;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
 }
 
 @-webkit-keyframes slide {
@@ -104,6 +134,7 @@ main .buttons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   row-gap: 42px;
 }
 
@@ -138,7 +169,7 @@ main .buttons .continue-button:hover {
 
 @media (max-width: 326px) {
   main .buttons .continue-button {
-    width: 290px;
+    width: 100%;
   }
 }
 

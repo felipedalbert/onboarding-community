@@ -13,7 +13,6 @@ img, h1, p {
 
 main {
   width: 100vw;
-  max-height: 100vh;
   padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +30,6 @@ main {
 }
 
 main img {
-  margin-top: -20px;
   -webkit-animation-name: emerge;
           animation-name: emerge;
   -webkit-animation-duration: .5s;

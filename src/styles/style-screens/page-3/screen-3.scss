@@ -26,7 +26,7 @@
 
 main{
     width: 100vw;
-    height: 100vh;
+    
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ main{
     align-items: center;
 
     img{
-        
+        margin-top: -25px;
         animation-name: emerge;
         animation-duration: .5s;
         @include keyframes(emerge);

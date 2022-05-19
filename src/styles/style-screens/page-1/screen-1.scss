@@ -24,7 +24,6 @@
     }
 }
 
-
 main{
     width: 100vw;
     height: 100vh;
@@ -33,93 +32,101 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-    img{
-        
-        animation-name: emerge;
-        animation-duration: .5s;
-        @include keyframes(emerge);
-    }
 
-    h1{
-        font-size: 2.4rem;
-        margin-top: 7px;
-
-        @media (max-width: 326px) {
-            font-size: 2.3rem;
-        }
-    }
-
-    p{
-        font-size: 1.8rem;
-        font-weight: 400;
-        margin-top: 26px;
-        width: 280px;
-        text-align: center;
-    }
-
-    .indicators{
-        margin-top: 64px;
+    .content{
+        max-width: 375px;
+        height: 640px;
         display: flex;
-        column-gap: 17px;
-
-        .indicator{
-            width: 12px;
-            height: 12px;
-            border: 1px solid #000000;
-            border-radius: 10px;
-
-            &:first-child{
-                border: none;
-                background-color: $cor-primaria;
-                animation-name: slide;
-                animation-duration: .8s;
-
-                @include keyframes-2(slide);
-            }
-        }
-    }
-
-    .buttons{
-        margin-top: 63px;
-        display: flex;
-        flex-direction: column;
+        flex-direction: column;      
         align-items: center;
-        width: 100%;
-        row-gap: 42px;
+        
+        
+        img{
+            margin-top: -25px;
+            animation-name: emerge;
+            animation-duration: .5s;
+            @include keyframes(emerge);
+        }
 
-        .continue-button{
-            width: 308px;
-            height: 54px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            font-weight: 500;
-            color: #ffffff;
-            background-color: $cor-primaria;
-            box-shadow: 0px 4px 10px #A1C3FC;
-            border-radius: 5px;
-            transition: .2s ease-in-out;
-            
-            &:hover{
-                background-color: #7bc490;
-                transition: .2s ease-in-out;
-            }
+        h1{
+            font-size: 2.4rem;
+            margin-top: 7px;
 
             @media (max-width: 326px) {
-                width: 100%;
+                font-size: 2.3rem;
             }
         }
 
-        .skip-button{
+        p{
             font-size: 1.8rem;
-            color: $cor-primaria;
-            border-bottom: 2px solid #ffffff;
+            font-weight: 400;
+            margin-top: 26px;
+            width: 280px;
+            text-align: center;
+        }
 
-            &:hover{
-                border-bottom: 2px solid #7bc490;
+        .indicators{
+            margin-top: 64px;
+            display: flex;
+            column-gap: 17px;
+
+            .indicator{
+                width: 12px;
+                height: 12px;
+                border: 1px solid #000000;
+                border-radius: 10px;
+
+                &:first-child{
+                    border: none;
+                    background-color: $cor-primaria;
+                    animation-name: slide;
+                    animation-duration: .8s;
+
+                    @include keyframes-2(slide);
+                }
+            }
+        }
+
+        .buttons{
+            margin-top: 63px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            row-gap: 42px;
+
+            .continue-button{
+                width: 308px;
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: #ffffff;
+                background-color: $cor-primaria;
+                box-shadow: 0px 4px 10px #A1C3FC;
+                border-radius: 5px;
+                transition: .2s ease-in-out;
+                
+                &:hover{
+                    background-color: #7bc490;
+                    transition: .2s ease-in-out;
+                }
+
+                @media (max-width: 326px) {
+                    width: 100%;
+                }
+            }
+
+            .skip-button{
+                font-size: 1.8rem;
+                color: $cor-primaria;
+                border-bottom: 2px solid #ffffff;
+
+                &:hover{
+                    border-bottom: 2px solid #7bc490;
+                }
             }
         }
     }

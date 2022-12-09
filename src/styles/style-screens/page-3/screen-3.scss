@@ -1,28 +1,27 @@
 @import '../../abstract/global';
 
-@mixin keyframes($animation-name){
-    @keyframes #{$animation-name}{
-        from{
-            opacity: .1;
-            margin-left: 200px;
-        }
-        to{
-            opacity: 1;
-            width: 300px;
-        }
+
+@keyframes emerge{
+    from{
+        opacity: .1;
+        margin-left: 200px;
+    }
+    to{
+        opacity: 1;
+        width: 300px;
     }
 }
 
-@mixin keyframes-2($animation-name){
-    @keyframes #{$animation-name}{
-        from{
-            opacity: 0.1;
-        }
-        to{
-            opacity: 1;
-        }
+
+@keyframes slide{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
     }
 }
+
 
 main{
     width: 100vw;
@@ -42,9 +41,7 @@ main{
         
         img{
             margin-top: -25px;
-            animation-name: emerge;
-            animation-duration: .5s;
-            @include keyframes(emerge);
+            animation: emerge .5s;
         }
         
         h1{
@@ -78,10 +75,7 @@ main{
                 &:last-child{
                     border: none;
                     background-color: $cor-primaria;
-                    animation-name: slide;
-                    animation-duration: .8s;
-
-                    @include keyframes-2(slide)
+                    animation: slide .8s;
                 }
             }
         }

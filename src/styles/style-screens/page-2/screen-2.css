@@ -11,51 +11,9 @@ img, h1, p {
   user-select: none;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-  padding: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .content {
-  max-width: 375px;
-  height: 640px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .content img {
-  margin-top: -25px;
-  -webkit-animation-name: emerge;
-          animation-name: emerge;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-}
-
 @-webkit-keyframes emerge {
   from {
-    opacity: .1;
+    opacity: 0.1;
     margin-left: 200px;
   }
   to {
@@ -66,7 +24,7 @@ main .content img {
 
 @keyframes emerge {
   from {
-    opacity: .1;
+    opacity: 0.1;
     margin-left: 200px;
   }
   to {
@@ -74,51 +32,6 @@ main .content img {
     width: 300px;
   }
 }
-
-main .content h1 {
-  font-size: 2.4rem;
-  margin-top: 7px;
-}
-
-@media (max-width: 326px) {
-  main .content h1 {
-    font-size: 2.3rem;
-  }
-}
-
-main .content p {
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin-top: 26px;
-  width: 275px;
-  text-align: center;
-}
-
-main .content .indicators {
-  margin-top: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 17px;
-          column-gap: 17px;
-}
-
-main .content .indicators .indicator {
-  width: 12px;
-  height: 12px;
-  border: 1px solid #000000;
-  border-radius: 10px;
-}
-
-main .content .indicators .indicator:nth-child(2) {
-  border: none;
-  background-color: #92e3a9;
-  -webkit-animation-name: slide;
-          animation-name: slide;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
-}
-
 @-webkit-keyframes slide {
   from {
     opacity: 0.1;
@@ -127,7 +40,6 @@ main .content .indicators .indicator:nth-child(2) {
     opacity: 1;
   }
 }
-
 @keyframes slide {
   from {
     opacity: 0.1;
@@ -136,65 +48,97 @@ main .content .indicators .indicator:nth-child(2) {
     opacity: 1;
   }
 }
-
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .content {
+  max-width: 375px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .content img {
+  margin-top: -25px;
+  -webkit-animation: emerge 0.5s;
+          animation: emerge 0.5s;
+}
+main .content h1 {
+  font-size: 2.4rem;
+  margin-top: 7px;
+}
+@media (max-width: 326px) {
+  main .content h1 {
+    font-size: 2.3rem;
+  }
+}
+main .content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 26px;
+  width: 275px;
+  text-align: center;
+}
+main .content .indicators {
+  margin-top: 64px;
+  display: flex;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+}
+main .content .indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+main .content .indicators .indicator:nth-child(2) {
+  border: none;
+  background-color: #92e3a9;
+  -webkit-animation: slide 0.8s;
+          animation: slide 0.8s;
+}
 main .content .buttons {
   margin-top: 63px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   row-gap: 42px;
 }
-
 main .content .buttons .continue-button {
   width: 308px;
   height: 54px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 1.8rem;
   font-weight: 500;
   color: #ffffff;
   background-color: #92e3a9;
-  -webkit-box-shadow: 0px 4px 10px #A1C3FC;
-          box-shadow: 0px 4px 10px #A1C3FC;
+  box-shadow: 0px 4px 10px #A1C3FC;
   border-radius: 5px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-
 main .content .buttons .continue-button:hover {
   background-color: #7bc490;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-
 @media (max-width: 326px) {
   main .content .buttons .continue-button {
     width: 100%;
   }
 }
-
 main .content .buttons .skip-button {
   font-size: 1.8rem;
   color: #92e3a9;
   border-bottom: 2px solid #ffffff;
 }
-
 main .content .buttons .skip-button:hover {
   border-bottom: 2px solid #7bc490;
-}
-/*# sourceMappingURL=screen-2.css.map */
+}/*# sourceMappingURL=screen-2.css.map */
